@@ -113,6 +113,8 @@ product/data-app/SuperWallpaperEarth
 product/data-app/SuperWallpaperMars
 product/data-app/MiuiVideoPlayer
 product/data-app/MiBrowser
+product/app/GoogleTTS
+product/priv-app/Weather
 
 # ============================================================================
 # KEEP - tidak pernah dihapus (awalan '!'). Mengalahkan semua daftar di atas.
