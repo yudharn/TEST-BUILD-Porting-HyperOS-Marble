@@ -14,6 +14,9 @@ com.android.cellbroadcastreceiver.overlay.common
 com.android.emergency                         | SOS Calling
 com.android.printspooler                      | Printing service
 com.android.stk                               | SIM Tool-kit
+com.android.egg                               | Easter egg
+com.android.traceur                          | System Tracing
+com.android.dynsystem                        | Dynamic System Updates (GSI)
 
 # ---- Google
 com.google.android.apps.tachyon               | Google Meet
@@ -28,10 +31,12 @@ com.google.ar.lens                            | AR Lens
 com.google.android.apps.restore               | Google Restore (setup restore)
 com.google.android.gms.supervision            | Family Link / parental controls
 com.google.android.gms.location.history       | Timeline (Location History)
+com.google.android.safetycore                 | SafetyCore (pemindai gambar sensitif)
+com.google.android.contactkeys               | Key Verifier
 
 # Opsional Google - ada fitur yang hilang, hapus tanda '#' kalau mau:
 # com.google.android.googlequicksearchbox     | Google app (300 MB): Assistant, voice typing Gboard, Circle to Search, widget search ikut hilang
-# com.google.android.partnersetup             | Partner Setup (kecil, hemat sedikit)
+# com.google.android.apps.turbo               | Device Health Services (Adaptive Battery ikut hilang)
 
 # ---- Xiaomi apps
 com.miui.player                               | Mi Music
@@ -63,9 +68,19 @@ com.xiaomi.mipicks                            | GetApps (app store Xiaomi)
 com.miui.newhome                              | Mi Feed / konten rekomendasi
 com.miui.virtualsim                           | Virtual SIM
 com.miui.systemAdSolution                     | System Ads
+com.mipay.wallet                              | Mi Wallet (global)
+com.xiaomi.payment                            | Mi Payment SDK
+com.xiaomi.simactivate.service               | SIM Activate (telemetri)
+com.miui.greenguard                           | Family Guard / Kids
+com.miui.carlink                              | Car with Mi
 
 # Opsional Xiaomi - ada fitur yang hilang, hapus tanda '#' kalau mau:
 com.duokan.phone.remotecontroller           | Mi Remote (IR blaster) - JANGAN dihapus kalau pakai remote IR
+com.miui.contentcatcher                     | Content Catcher (saran konten; App Vault/rekomendasi)
+com.miui.catcherpatch                       | pasangan Content Catcher
+com.xiaomi.aiasst.service                    | AI Translation / caption panggilan
+com.miui.cit                                | hardware test (CIT), hanya kode dial servis
+# com.miui.tsmclient                          | Mi Pay NFC - JANGAN dihapus kalau pakai pembayaran NFC Xiaomi
 
 # ---- Facebook
 com.facebook.appmanager                       | Facebook App Manager
