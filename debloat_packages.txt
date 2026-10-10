@@ -36,7 +36,7 @@ com.google.android.contactkeys               | Key Verifier
 
 # Opsional Google - ada fitur yang hilang, hapus tanda '#' kalau mau:
 # com.google.android.googlequicksearchbox     | Google app (300 MB): Assistant, voice typing Gboard, Circle to Search, widget search ikut hilang
-# com.google.android.apps.turbo               | Device Health Services (Adaptive Battery ikut hilang)
+com.google.android.apps.turbo               | Device Health Services (Adaptive Battery ikut hilang)
 
 # ---- Xiaomi apps
 com.miui.player                               | Mi Music
