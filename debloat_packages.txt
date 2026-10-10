@@ -48,6 +48,7 @@ com.xiaomi.joyose                             | Joyose (profil performa/thermal 
 com.xiaomi.midrop                             | Mi Drop / ShareMe
 com.xiaomi.scanner                            | Scanner
 com.iflytek.inputmethod.miui                  | keyboard iFlytek (Gboard jadi default)
+com.miui.audiomonitor
 
 # ---- Facebook
 com.facebook.appmanager                       | Facebook App Manager
@@ -115,6 +116,8 @@ product/data-app/MiuiVideoPlayer
 product/data-app/MiBrowser
 product/app/GoogleTTS
 product/priv-app/Weather
+product/app/AiAsstVision
+system_ext/app/MiuiAudioMonitor
 
 # ============================================================================
 # KEEP - tidak pernah dihapus (awalan '!'). Mengalahkan semua daftar di atas.
