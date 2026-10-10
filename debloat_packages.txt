@@ -63,7 +63,6 @@ com.xiaomi.mipicks                            | GetApps (app store Xiaomi)
 com.miui.newhome                              | Mi Feed / konten rekomendasi
 com.miui.virtualsim                           | Virtual SIM
 com.miui.systemAdSolution                     | System Ads
-com.xiaomi.miplay_client                      | MiPlay (casting, sejalan dengan MiLink yang sudah dihapus)
 
 # Opsional Xiaomi - ada fitur yang hilang, hapus tanda '#' kalau mau:
 com.duokan.phone.remotecontroller           | Mi Remote (IR blaster) - JANGAN dihapus kalau pakai remote IR
