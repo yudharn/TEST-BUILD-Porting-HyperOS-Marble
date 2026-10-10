@@ -25,6 +25,13 @@ com.google.android.feedback                   | Feedback app
 com.google.android.marvin.talkback            | TalkBack
 com.google.android.printservice.recommendation | Mobile Printing
 com.google.ar.lens                            | AR Lens
+com.google.android.apps.restore               | Google Restore (setup restore)
+com.google.android.gms.supervision            | Family Link / parental controls
+com.google.android.gms.location.history       | Timeline (Location History)
+
+# Opsional Google - ada fitur yang hilang, hapus tanda '#' kalau mau:
+# com.google.android.googlequicksearchbox     | Google app (300 MB): Assistant, voice typing Gboard, Circle to Search, widget search ikut hilang
+# com.google.android.partnersetup             | Partner Setup (kecil, hemat sedikit)
 
 # ---- Xiaomi apps
 com.miui.player                               | Mi Music
@@ -49,6 +56,17 @@ com.xiaomi.midrop                             | Mi Drop / ShareMe
 com.xiaomi.scanner                            | Scanner
 com.iflytek.inputmethod.miui                  | keyboard iFlytek (Gboard jadi default)
 com.miui.audiomonitor
+com.miui.hybrid                               | Quick Apps
+com.miui.hybrid.accessory                     | Quick Apps service
+com.mi.global.bbs                             | Mi Community
+com.xiaomi.mipicks                            | GetApps (app store Xiaomi)
+com.miui.newhome                              | Mi Feed / konten rekomendasi
+com.miui.virtualsim                           | Virtual SIM
+com.miui.systemAdSolution                     | System Ads
+com.xiaomi.miplay_client                      | MiPlay (casting, sejalan dengan MiLink yang sudah dihapus)
+
+# Opsional Xiaomi - ada fitur yang hilang, hapus tanda '#' kalau mau:
+com.duokan.phone.remotecontroller           | Mi Remote (IR blaster) - JANGAN dihapus kalau pakai remote IR
 
 # ---- Facebook
 com.facebook.appmanager                       | Facebook App Manager
@@ -119,6 +137,9 @@ product/app/GoogleTTS
 product/priv-app/Weather
 product/app/AiAsstVision
 system_ext/app/MiuiAudioMonitor
+
+# Opsional - kalau Settings/status bar terasa aneh karena overlay milik donor (marble stock tidak punya overlay ini):
+# product/overlay/SettingsRroDeviceSystemUiOverlay.apk | overlay Settings/SystemUI khas donor
 
 # ============================================================================
 # KEEP - tidak pernah dihapus (awalan '!'). Mengalahkan semua daftar di atas.
