@@ -112,7 +112,6 @@ product/priv-app/LinkToWindows
 product/data-app/SuperWallpaperEarth
 product/data-app/SuperWallpaperMars
 product/data-app/MiuiVideoPlayer
-product/app/MiMediaEditor
 product/data-app/MiBrowser
 
 # ============================================================================
