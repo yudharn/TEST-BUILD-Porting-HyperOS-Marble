@@ -115,6 +115,8 @@ source "$SCRIPT_DIR/port_arch64.sh"
 source "$SCRIPT_DIR/port_gms.sh"
 # shellcheck source=port_chrome.sh
 source "$SCRIPT_DIR/port_chrome.sh"
+# shellcheck source=port_apps.sh
+source "$SCRIPT_DIR/port_apps.sh"
 
 # ------------------------------------------------------------------ fetch
 fetch() { # src dest_dir name -> echo path
@@ -1658,6 +1660,7 @@ main() {
     if [[ -n $RECOVERY_IMG ]]; then check_url RECOVERY_IMG "$RECOVERY_IMG"; fi
     if [[ -n $BOOT_IMG ]]; then check_url BOOT_IMG "$BOOT_IMG"; fi
     if [[ -n $GBOARD_APK ]]; then check_url GBOARD_APK "$GBOARD_APK"; fi
+    apps_check_urls   # GALLERY_APK / MEDIAEDITOR_APK / CAMERA_APK
     group_end
 
     group_start "1/7 Base ROM ($TARGET_DEVICE)"
@@ -1760,6 +1763,7 @@ main() {
     gms_from_base   # donor tanpa GMS/Play Store -> salin dari product base (GMS_FROM_BASE=auto|true|false)
     patch_port_resources
     apply_device_files
+    apps_from_url      # Galeri / Editor / Kamera dari URL (APPS_FROM_URL), mengalahkan debloat, devices/ dan base
     browser_fallback   # setelah debloat: ROM tanpa browser -> pasang Chrome (BROWSER_FALLBACK=auto|true|false)
     fix_aod_overlay
     millet_fix
