@@ -143,7 +143,7 @@ product/data-app/SuperWallpaperEarth
 product/data-app/SuperWallpaperMars
 product/data-app/MiuiVideoPlayer
 product/data-app/MiBrowser
-product/app/MiMediaEditor
+!product/app/MiMediaEditor
 product/app/GoogleTTS
 product/priv-app/Weather
 product/app/AiAsstVision
