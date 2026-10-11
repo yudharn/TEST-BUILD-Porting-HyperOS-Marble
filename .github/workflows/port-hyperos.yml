@@ -89,8 +89,8 @@ env:
   GMS_FROM_BASE: auto          # auto = donor tanpa gms/gsf/Play Store -> salin dari product base | true = selalu lengkapi | false = mati
   GMS_SCOPE: core              # core = gms + gsf + vending + pendukung | all = semua com.google.android.* (kecuali WebView/Chrome/keyboard)
   APPS_FROM_URL: "true"        # ganti MiuiGallery, MiMediaEditor, MiuiCamera dengan APK dari URL di bawah (URL dikosongkan = app itu dilewati)
-  GALLERY_APK: "https://github.com/Yudharmdn/boot-melt-rebase/releases/download/boot-melt-rebase/Gallery-4.3.1.16.apk"
-  MEDIAEDITOR_APK: "https://github.com/Yudharmdn/boot-melt-rebase/releases/download/boot-melt-rebase/Editor.Galeri_2.11.10.0.3.apk"
+  GALLERY_APK: ""
+  MEDIAEDITOR_APK: ""
   CAMERA_APK: "https://github.com/Yudharmdn/boot-melt-rebase/releases/download/boot-melt-rebase/Camera_6.7.000070.0.apk"
   BROWSER_FALLBACK: auto       # auto = ROM donor (setelah debloat) tanpa browser -> pasang Chrome | true = selalu | false = mati
   CHROME_APK: "https://github.com/Yudharmdn/boot-melt-rebase/releases/download/boot-melt-rebase/com.android.chrome.apkm"               # URL APK Chrome (com.android.chrome; bundle .apkm/.xapk juga boleh). Kosong = coba Chrome dari ROM base
