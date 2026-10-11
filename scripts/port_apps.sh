@@ -109,7 +109,7 @@ PY
 )
     case $kind in
         apk)    ;;
-        bundle) warn "Apps: $label berupa bundle, hanya base.apk yang dipakai (tanpa split bahasa/dpi)" ;;
+        bundle) log "Apps: $label berupa bundle, hanya base.apk yang dipakai (tanpa split bahasa/dpi)" ;;
         *)      warn "Apps: $label bukan APK/bundle valid ($url), dilewati"; rm -rf "$tmp"; return 0 ;;
     esac
     apk="$tmp/app.apk"

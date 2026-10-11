@@ -469,7 +469,7 @@ vndk_compat() {
     if [[ ! $ver =~ ^[0-9]+$ ]]; then log "VNDK: ro.vndk.version vendor '${ver:-kosong}' (tidak memakai VNDK), dilewati"; return 0; fi
     have=$(find "$P_FS/system_ext/apex" "$P_FS/system/system/apex" -maxdepth 1 -name "com.android.vndk.v$ver.*apex" -printf '%f ' 2>/dev/null || true)
     if [[ -n ${have// /} ]]; then ok "VNDK: vendor butuh v$ver, sudah ada di port ($have)"; vndk_declare "$ver"; return 0; fi
-    warn "VNDK: vendor butuh VNDK v$ver tapi APEX-nya tidak ada di system donor -> HAL vendor gagal load kalau tidak ditambah"
+    log "VNDK: vendor butuh VNDK v$ver, APEX-nya tidak ada di system donor -> disalin dari base"
     rm -rf "$tmp"; mkdir -p "$tmp"
     for img in system_ext system; do
         [[ -f $B_IMG/$img.img ]] || continue
@@ -1427,7 +1427,7 @@ boot_compat() { # base.img custom.img
             die "versi kernel custom (${kn%%-*}) beda seri dengan base (${kb%%-*}). Modul di vendor_boot/vendor_dlkm tidak akan load -> bootloop"
         fi
         if [[ ${kb%%-*} != "${kn%%-*}" ]]; then
-            warn "sublevel kernel beda (base ${kb%%-*}, custom ${kn%%-*}). GKI biasanya tetap load modul vendor, tapi kalau layar/touch mati setelah boot, cek dmesg 'disagrees about version'"
+            log "boot: sublevel kernel beda (base ${kb%%-*}, custom ${kn%%-*}), modul vendor GKI tetap load. Kalau layar/touch mati, cek dmesg 'disagrees about version'"
         fi
     else
         warn "versi kernel tidak bisa dibaca dari salah satu boot.img, kecocokan kernel tidak dicek"

@@ -105,7 +105,7 @@ browser_fallback() {
         return 0
     fi
     if [[ $mode == auto ]]; then
-        warn "Browser: ROM donor tidak punya browser (setelah debloat) -> pasang Chrome"
+        log "Browser: ROM donor tidak punya browser (setelah debloat) -> pasang Chrome"
     else
         log "Browser: BROWSER_FALLBACK=true, memasang Chrome (browser yang ada: ${list:-tidak ada})"
     fi
@@ -137,7 +137,7 @@ PY
 )
         case $kind in
             apk)    ;;
-            bundle) warn "Browser: CHROME_APK berupa bundle, hanya base.apk yang dipakai (tanpa split bahasa/dpi)" ;;
+            bundle) log "Browser: CHROME_APK berupa bundle, hanya base.apk yang dipakai (tanpa split bahasa/dpi)" ;;
             *)      warn "Browser: CHROME_APK bukan APK/bundle valid, Chrome tidak dipasang"; rm -rf "$tmp"; return 0 ;;
         esac
         apk="$tmp/Chrome.apk"

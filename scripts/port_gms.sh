@@ -52,7 +52,7 @@ gms_from_base() {
         return 0
     fi
     if [[ -n $miss ]]; then
-        warn "GMS: donor tidak punya:$miss -> salin dari ROM base (scope: $scope)"
+        log "GMS: donor tidak punya:$miss -> salin dari ROM base (scope: $scope)"
     else
         log "GMS: GMS_FROM_BASE=true, melengkapi paket Google yang belum ada di donor (scope: $scope)"
     fi
