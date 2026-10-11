@@ -28,9 +28,7 @@ com.google.android.feedback                   | Feedback app
 com.google.android.marvin.talkback            | TalkBack
 com.google.android.printservice.recommendation | Mobile Printing
 com.google.ar.lens                            | AR Lens
-com.google.android.apps.restore               | Google Restore (setup restore)
 com.google.android.gms.supervision            | Family Link / parental controls
-com.google.android.gms.location.history       | Timeline (Location History)
 com.google.android.safetycore                 | SafetyCore (pemindai gambar sensitif)
 com.google.android.contactkeys               | Key Verifier
 
@@ -70,7 +68,6 @@ com.miui.virtualsim                           | Virtual SIM
 com.miui.systemAdSolution                     | System Ads
 com.mipay.wallet                              | Mi Wallet (global)
 com.xiaomi.payment                            | Mi Payment SDK
-com.xiaomi.simactivate.service               | SIM Activate (telemetri)
 com.miui.greenguard                           | Family Guard / Kids
 com.miui.carlink                              | Car with Mi
 
